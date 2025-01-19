@@ -15,5 +15,5 @@ stdin.on("data", (data) => {
 });
 
 process.on("SIGINT", () => process.exit());
-process.on("exit", () => stdout.write("Goodbye!\n"));
+process.on("exit", () => console.log("Goodbye!"));
 
