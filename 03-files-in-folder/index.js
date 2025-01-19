@@ -4,7 +4,7 @@ const fs = require("fs");
 
 const filePath = path.join(__dirname, 'secret-folder');
 
-fs.readdir(filePath, { withFileTypes: true }, (err, files) => {
+fs.readdir(filePath, { withFileTypes: true }, (error, files) => {
 
     files.forEach((x) => {
         let fileFolderPath = path.join(filePath, x.name);
